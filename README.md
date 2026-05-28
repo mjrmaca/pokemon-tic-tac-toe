@@ -6,13 +6,13 @@ A modern, interactive Pokémon-themed web game built with Next.js and Tailwind C
 
 ## 🛠️ Tech Stack (Phase 1)
 
-| Technology       | Role                                             | Version       |
-| :--------------- | :----------------------------------------------- | :------------ |
-| **Next.js**      | React Framework & Core Architecture (App Router) | `v15.x`       |
-| **React**        | Component-Based UI Library                       | `v19.x`       |
-| **Tailwind CSS** | Utility-First Responsive Styling                 | `v4.x`        |
-| **Node.js**      | Local Development Runtime Environment            | `v22.x` (LTS) |
-| **npm**          | Package Management & Dependency Tracking         | `v10.x`       |
+| Technology       | Role                                             | Version |
+| :--------------- | :----------------------------------------------- | :------ |
+| **Next.js**      | React Framework & Core Architecture (App Router) | `v16.x` |
+| **React**        | Component-Based UI Library                       | `v19.x` |
+| **Tailwind CSS** | Utility-First Responsive Styling                 | `v4.x`  |
+| **Node.js**      | Local Development Runtime Environment            | `v20.x` |
+| **npm**          | Package Management & Dependency Tracking         | `v10.x` |
 
 ## 🚀 Getting Started
 
