@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 Pokémon Tic-Tac-Toe
 
-## Getting Started
+A modern, interactive Pokémon-themed web game built with Next.js and Tailwind CSS. Players face off in a tactical grid interface featuring smooth animations and dynamic layouts.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack (Phase 1)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Technology       | Role                                             | Version       |
+| :--------------- | :----------------------------------------------- | :------------ |
+| **Next.js**      | React Framework & Core Architecture (App Router) | `v15.x`       |
+| **React**        | Component-Based UI Library                       | `v19.x`       |
+| **Tailwind CSS** | Utility-First Responsive Styling                 | `v4.x`        |
+| **Node.js**      | Local Development Runtime Environment            | `v22.x` (LTS) |
+| **npm**          | Package Management & Dependency Tracking         | `v10.x`       |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these steps to set up the project locally on your machine.
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+Ensure you have **Node.js** installed on your system.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Node.js:** `v22.x` (LTS recommended) or higher. You can check your version by running `node -v` in your terminal.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Local Setup Instructions
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mjrmaca/pokemon-tic-tac-toe.git
+   cd pokemon-tic-tac-toe
+   ```
