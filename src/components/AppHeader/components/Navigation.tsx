@@ -3,6 +3,8 @@ import { NAVIGATION_ITEMS } from "../utils/constants";
 import { NavigationItem } from "../utils/types";
 import { ICONS } from "../utils/icons";
 import Link from "next/link";
+import clsx from "clsx";
+import Tooltip from "../../Tooltip";
 
 const Navigation: FC = () => {
   return (
@@ -11,10 +13,14 @@ const Navigation: FC = () => {
         <Link
           key={item.url}
           href={item.url}
-          className="font-quicksand text-base text-primary flex items-center gap-2 hover:bg-surface-container-high transition-colors p-2 rounded-lg font-bold"
+          className={clsx([
+            "group relative font-quicksand text-base text-primary flex items-center",
+            "gap-2 hover:bg-surface-container-high transition-colors p-2 rounded-lg font-bold",
+          ])}
         >
           {ICONS[item.icon]}
           {item.label}
+          <Tooltip label={item.tooltip} />
         </Link>
       ))}
     </nav>
