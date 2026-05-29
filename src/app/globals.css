@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #f8faf1;
+  --color-on-background: #191d17;
+
+  /* --- Game UI --- */
+  --color-surface: #f8faf1;
+  --color-surface-tile: #ffffff;
+  --color-surface-bright: #f8faf1;
+
+  --color-battle-blue: #2a75bb;
+
+  --color-tile-shadow: #e1e3db;
+
+  /* --- Font --- */
+  --font-quicksand: "Quicksand", sans-serif;
+
+  /* --- Animations --- */
+  --animate-floating-bounce: bounce-subtle 2s infinite ease-in-out;
+}
+
+body {
+  font-family: var(--font-quicksand);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+@keyframes bounce-subtle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
