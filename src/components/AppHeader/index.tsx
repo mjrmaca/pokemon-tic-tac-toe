@@ -3,6 +3,7 @@
 import { FC } from "react";
 import AppNavigation from "../AppNavigation";
 import Brand from "./components/Brand";
+import MobileSettings from "../AppNavigation/components/MobileSettings";
 
 const AppHeader: FC = () => {
   return (
@@ -16,6 +17,7 @@ const AppHeader: FC = () => {
       >
         <Brand />
         <AppNavigation type="header" />
+        <MobileSettings />
       </div>
     </header>
   );

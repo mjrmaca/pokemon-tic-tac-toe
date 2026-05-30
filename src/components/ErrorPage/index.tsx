@@ -17,7 +17,10 @@ const ErrorPage: FC<ErrorPageProps> = ({
   description,
 }) => {
   return (
-    <div className="flex min-h-[80vh] w-full items-center justify-center p-4">
+    <div
+      className="flex min-h-[80vh] w-full items-center justify-center p-4
+        select-none"
+    >
       <div
         className="flex w-full max-w-4xl flex-col items-center justify-center
           gap-8 md:flex-row md:gap-16"
@@ -70,7 +73,8 @@ const ErrorPage: FC<ErrorPageProps> = ({
             className="bg-battle-blue font-quicksand flex w-full min-w-45
               items-center justify-center gap-2 rounded-2xl px-6 py-3 font-bold
               text-white shadow-[0_4px_0_#1d4ed8] transition-all duration-100
-              select-none active:translate-y-1 active:shadow-none md:w-auto"
+              select-none hover:-translate-y-0.5 hover:shadow-[0_6px_0_#1d4ed8]
+              active:translate-y-1 active:shadow-none md:w-auto"
           >
             <svg
               className="h-5 w-5 fill-current"
