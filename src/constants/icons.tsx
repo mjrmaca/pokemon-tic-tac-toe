@@ -1,4 +1,4 @@
-export const ICONS = {
+export const NAVIGATION_ICONS = {
   gamepad: (
     <svg
       width={22}
@@ -39,3 +39,13 @@ export const ICONS = {
     </svg>
   ),
 };
+
+export const HOME_ICON = (
+  <svg
+    className="h-5 w-5 fill-current"
+    viewBox="0 -960 960 960"
+    aria-hidden="true"
+  >
+    <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-60 60v-480l300-240 300 240v480H540v-240H420v240H180Zm300-330Z" />
+  </svg>
+);

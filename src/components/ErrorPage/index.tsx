@@ -1,7 +1,8 @@
 "use client";
 
 import { FC, ReactNode } from "react";
-import Link from "next/link";
+import PrimaryLink from "../PrimaryLink";
+import { HOME_ICON } from "@/src/constants/icons";
 
 interface ErrorPageProps {
   title: string;
@@ -68,23 +69,7 @@ const ErrorPage: FC<ErrorPageProps> = ({
             {description}
           </p>
 
-          <Link
-            href="/"
-            className="bg-battle-blue font-quicksand flex w-full min-w-45
-              items-center justify-center gap-2 rounded-2xl px-6 py-3 font-bold
-              text-white shadow-[0_4px_0_#1d4ed8] transition-all duration-100
-              select-none hover:-translate-y-0.5 hover:shadow-[0_6px_0_#1d4ed8]
-              active:translate-y-1 active:shadow-none md:w-auto"
-          >
-            <svg
-              className="h-5 w-5 fill-current"
-              viewBox="0 -960 960 960"
-              aria-hidden="true"
-            >
-              <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-60 60v-480l300-240 300 240v480H540v-240H420v240H180Zm300-330Z" />
-            </svg>
-            <span>Back to Home</span>
-          </Link>
+          <PrimaryLink label="Back to Home" url="/" icon={HOME_ICON} />
         </div>
       </div>
     </div>

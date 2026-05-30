@@ -2,7 +2,7 @@ import Link from "next/link";
 import { IconType } from "../utils/types";
 import { FC } from "react";
 import clsx from "clsx";
-import { ICONS } from "../utils/icons";
+import { NAVIGATION_ICONS } from "@/src/constants/icons";
 
 interface NavigationPillProps {
   isActive: boolean;
@@ -32,7 +32,7 @@ const NavigationPill: FC<NavigationPillProps> = ({
             : "text-on-surface-variant hover:bg-zinc-100",
         ])}
       >
-        {ICONS[icon]}
+        {NAVIGATION_ICONS[icon]}
       </div>
 
       <span

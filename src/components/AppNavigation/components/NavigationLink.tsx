@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { FC } from "react";
-import { ICONS } from "../utils/icons";
 import { IconType } from "../utils/types";
 import Tooltip from "../../Tooltip";
+import { NAVIGATION_ICONS } from "@/src/constants/icons";
 
 interface NavigationLinkProps {
   isActive: boolean;
@@ -40,7 +40,7 @@ const NavigationLink: FC<NavigationLinkProps> = ({
           isActive ? "text-battle-blue" : "text-on-surface-variant",
         ])}
       >
-        {ICONS[icon]}
+        {NAVIGATION_ICONS[icon]}
       </span>
       {label}
       <Tooltip label={tooltip} />
