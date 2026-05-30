@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
+import AppLayout from "../components/AppLayout";
 import "./globals.css";
+import { APP_DESC, APP_TITLE } from "../constants/metadata";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -9,9 +11,8 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Pokémon Tic-Tac-Toe",
-  description:
-    "A modern, interactive Pokémon-themed web game built with Next.js and Tailwind CSS. Players face off in a tactical grid interface featuring smooth animations and dynamic layouts.",
+  title: APP_TITLE,
+  description: APP_DESC,
 };
 
 export default function RootLayout({
@@ -21,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${quicksand.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <AppLayout>{children}</AppLayout>
+      </body>
     </html>
   );
 }

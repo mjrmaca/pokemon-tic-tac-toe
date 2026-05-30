@@ -12,7 +12,10 @@ const Brand: FC = () => {
         alt="Pokeball Logo"
         src="/images/pokeball.png"
       />
-      <h1 className="font-quicksand text-xl md:text-2xl text-battle-blue font-bold tracking-tight">
+      <h1
+        className="font-quicksand text-battle-blue text-xl font-bold
+          tracking-tight md:text-2xl"
+      >
         Pokémon Tic-Tac-Toe
       </h1>
 
