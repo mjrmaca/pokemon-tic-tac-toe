@@ -19,7 +19,7 @@ const AppNavigation: FC<AppNavigationProps> = ({ type }) => {
       : "flex md:hidden justify-around w-full";
 
   return (
-    <nav className={clsx(["items-center gap-8", className])}>
+    <nav className={clsx(["items-center gap-8 select-none", className])}>
       {NAVIGATION_ITEMS.map((item: NavigationItem, index: number) => {
         const isActive = pathname === item.url;
 

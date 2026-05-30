@@ -5,7 +5,10 @@ import Link from "next/link";
 
 const Brand: FC = () => {
   return (
-    <Link href="/" className="group relative flex items-center gap-2 md:gap-4">
+    <Link
+      href="/"
+      className="group relative flex items-center gap-2 select-none md:gap-4"
+    >
       <Image
         width={45}
         height={45}
