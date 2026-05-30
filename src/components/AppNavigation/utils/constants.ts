@@ -19,4 +19,10 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     icon: "clock-rotate-left",
     tooltip: "Check match history",
   },
+  {
+    label: "Settings",
+    url: "/settings",
+    icon: "gear",
+    tooltip: "Customize your space",
+  },
 ];

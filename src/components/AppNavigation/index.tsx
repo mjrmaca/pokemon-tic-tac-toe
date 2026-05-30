@@ -4,8 +4,8 @@ import { NavigationItem, NavigationType } from "./utils/types";
 import { ICONS } from "./utils/icons";
 import Link from "next/link";
 import clsx from "clsx";
-import Tooltip from "../Tooltip";
 import { usePathname } from "next/navigation";
+import NavigationLink from "./components/NavigationLink";
 
 interface AppNavigationProps {
   type: NavigationType;
@@ -21,11 +21,11 @@ const AppNavigation: FC<AppNavigationProps> = ({ type }) => {
 
   return (
     <nav className={clsx(["items-center gap-8", className])}>
-      {NAVIGATION_ITEMS.map((item: NavigationItem) => {
+      {NAVIGATION_ITEMS.map((item: NavigationItem, index: number) => {
         const isActive = pathname === item.url;
 
         if (type === "footer") {
-          return (
+          return index > 2 ? null : (
             <Link
               key={item.url}
               href={item.url}
@@ -57,30 +57,14 @@ const AppNavigation: FC<AppNavigationProps> = ({ type }) => {
         }
 
         return (
-          <Link
+          <NavigationLink
             key={item.url}
-            href={item.url}
-            className={clsx([
-              "group font-quicksand text-primary relative flex items-center",
-              "hover:bg-surface-container-high gap-2 rounded-lg p-2 text-base",
-              "font-bold transition-colors",
-              isActive
-                ? "text-battle-blue bg-surface-container-high font-bold"
-                : "text-on-surface-variant font-semibold hover:bg-zinc-100",
-            ])}
-          >
-            <span
-              className={clsx([
-                "flex items-center justify-center transition-colors",
-                "fill-current stroke-current",
-                isActive ? "text-battle-blue" : "text-on-surface-variant",
-              ])}
-            >
-              {ICONS[item.icon]}
-            </span>
-            {item.label}
-            <Tooltip label={item.tooltip} />
-          </Link>
+            isActive={isActive}
+            url={item.url}
+            icon={item.icon}
+            label={item.label}
+            tooltip={item.tooltip}
+          />
         );
       })}
     </nav>
