@@ -29,14 +29,15 @@ const AppNavigation: FC<AppNavigationProps> = ({ type }) => {
             <Link
               key={item.url}
               href={item.url}
-              className="flex flex-col items-center gap-1 min-w-16 focus:outline-none"
+              className="flex min-w-16 flex-col items-center gap-1
+                focus:outline-none"
             >
               <div
                 className={clsx([
-                  "px-5 py-1.5 rounded-full transition-all duration-200",
+                  "rounded-full px-5 py-1.5 transition-all duration-200",
                   "fill-current stroke-current",
                   isActive
-                    ? "bg-battle-blue text-white shadow-sm scale-105"
+                    ? "bg-battle-blue scale-105 text-white shadow-sm"
                     : "text-on-surface-variant hover:bg-zinc-100",
                 ])}
               >
@@ -60,16 +61,17 @@ const AppNavigation: FC<AppNavigationProps> = ({ type }) => {
             key={item.url}
             href={item.url}
             className={clsx([
-              "group relative font-quicksand text-base text-primary flex items-center",
-              "gap-2 hover:bg-surface-container-high transition-colors p-2 rounded-lg font-bold",
+              "group font-quicksand text-primary relative flex items-center",
+              "hover:bg-surface-container-high gap-2 rounded-lg p-2 text-base",
+              "font-bold transition-colors",
               isActive
-                ? "text-battle-blue font-bold bg-surface-container-high"
+                ? "text-battle-blue bg-surface-container-high font-bold"
                 : "text-on-surface-variant font-semibold hover:bg-zinc-100",
             ])}
           >
             <span
               className={clsx([
-                "transition-colors flex items-center justify-center",
+                "flex items-center justify-center transition-colors",
                 "fill-current stroke-current",
                 isActive ? "text-battle-blue" : "text-on-surface-variant",
               ])}

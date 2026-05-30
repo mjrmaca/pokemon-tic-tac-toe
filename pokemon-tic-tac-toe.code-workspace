@@ -5,7 +5,12 @@
     "editor.detectIndentation": false,
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
+
     "editor.rulers": [80],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "indent",
+
     "editor.tabSize": 2,
     "prettier.prettierPath": "./node_modules/prettier",
     "css.lint.unknownAtRules": "ignore",

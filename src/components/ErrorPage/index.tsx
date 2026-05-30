@@ -2,7 +2,6 @@
 
 import { FC, ReactNode } from "react";
 import Link from "next/link";
-import clsx from "clsx";
 
 interface ErrorPageProps {
   title: string;
@@ -18,82 +17,63 @@ const ErrorPage: FC<ErrorPageProps> = ({
   description,
 }) => {
   return (
-    <div className="min-h-[80vh] w-full flex items-center justify-center p-4">
+    <div className="flex min-h-[80vh] w-full items-center justify-center p-4">
       <div
-        className={clsx([
-          "max-w-4xl w-full flex flex-col md:flex-row",
-          "items-center justify-center gap-8 md:gap-16",
-        ])}
+        className="flex w-full max-w-4xl flex-col items-center justify-center
+          gap-8 md:flex-row md:gap-16"
       >
         <div className="relative flex items-center justify-center">
           <div
-            className={clsx([
-              "absolute w-56 h-56 bg-amber-100/50",
-              "rounded-full blur-2xl animate-pulse",
-            ])}
+            className="absolute h-56 w-56 animate-pulse rounded-full
+              bg-amber-100/50 blur-2xl"
           />
 
           <div
-            className={clsx([
-              "relative w-44 h-44 md:w-52 md:h-52 rounded-full",
-              "border-4 border-amber-800/30 bg-white flex",
-              "items-center justify-center shadow-inner",
-            ])}
+            className="relative flex h-44 w-44 items-center justify-center
+              rounded-full border-4 border-amber-800/30 bg-white shadow-inner
+              md:h-52 md:w-52"
           >
-            <div className="text-amber-800/80 flex items-center justify-center">
+            <div className="flex items-center justify-center text-amber-800/80">
               {icon}
             </div>
           </div>
         </div>
 
         <div
-          className={clsx([
-            "flex flex-col items-center md:items-start",
-            "text-center md:text-left max-w-sm",
-          ])}
+          className="flex max-w-sm flex-col items-center text-center
+            md:items-start md:text-left"
         >
           <div
-            className={clsx([
-              "inline-block border border-zinc-300 bg-zinc-50/50",
-              "text-zinc-600 font-quicksand text-xs font-bold",
-              "uppercase tracking-wider px-4 py-1 rounded-full",
-              "mb-4 shadow-sm",
-            ])}
+            className="font-quicksand mb-4 inline-block rounded-full border
+              border-zinc-300 bg-zinc-50/50 px-4 py-1 text-xs font-bold
+              tracking-wider text-zinc-600 shadow-sm"
           >
             {title}
           </div>
 
           <h2
-            className={clsx([
-              "font-quicksand text-2xl md:text-3xl text-zinc-900",
-              "font-bold tracking-tight leading-tight mb-3",
-            ])}
+            className="font-quicksand mb-3 text-2xl leading-tight font-bold
+              tracking-tight text-zinc-900 md:text-3xl"
           >
             {header}
           </h2>
 
           <p
-            className={clsx([
-              "font-quicksand text-sm md:text-base text-zinc-600",
-              "font-medium leading-relaxed mb-6",
-            ])}
+            className="font-quicksand mb-6 text-sm leading-relaxed font-medium
+              text-zinc-600 md:text-base"
           >
             {description}
           </p>
 
           <Link
             href="/"
-            className={clsx([
-              "w-full md:w-auto min-w-45 bg-battle-blue text-white",
-              "font-quicksand font-bold flex items-center",
-              "justify-center gap-2 px-6 py-3 rounded-2xl",
-              "shadow-[0_4px_0_#1d4ed8] active:translate-y-1",
-              "active:shadow-none transition-all duration-100",
-              "select-none",
-            ])}
+            className="bg-battle-blue font-quicksand flex w-full min-w-45
+              items-center justify-center gap-2 rounded-2xl px-6 py-3 font-bold
+              text-white shadow-[0_4px_0_#1d4ed8] transition-all duration-100
+              select-none active:translate-y-1 active:shadow-none md:w-auto"
           >
             <svg
-              className="w-5 h-5 fill-current"
+              className="h-5 w-5 fill-current"
               viewBox="0 -960 960 960"
               aria-hidden="true"
             >
