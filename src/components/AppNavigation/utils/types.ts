@@ -7,4 +7,6 @@ export interface NavigationItem {
   icon: IconType;
 }
 
+export type NavigationType = "header" | "footer";
+
 export type IconType = keyof typeof ICONS;

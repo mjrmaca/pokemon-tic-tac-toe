@@ -3,6 +3,7 @@
 import { FC } from "react";
 import GridCell from "../components/GridCell";
 import AppHeader from "../components/AppHeader";
+import AppFooter from "../components/AppFooter";
 
 const Home: FC = () => {
   return (
@@ -23,6 +24,7 @@ const Home: FC = () => {
           />
         </div>
       </div>
+      <AppFooter />
     </>
   );
 };
