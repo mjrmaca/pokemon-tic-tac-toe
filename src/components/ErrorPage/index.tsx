@@ -3,6 +3,7 @@
 import { FC, ReactNode } from "react";
 import PrimaryLink from "../PrimaryLink";
 import { HOME_ICON } from "@/src/constants/icons";
+import TitlePill from "../TitlePill";
 
 interface ErrorPageProps {
   title: string;
@@ -47,13 +48,7 @@ const ErrorPage: FC<ErrorPageProps> = ({
           className="flex max-w-sm flex-col items-center text-center
             md:items-start md:text-left"
         >
-          <div
-            className="font-quicksand mb-4 inline-block rounded-full border
-              border-zinc-300 bg-zinc-50/50 px-4 py-1 text-xs font-bold
-              tracking-wider text-zinc-600 shadow-sm"
-          >
-            {title}
-          </div>
+          <TitlePill title={title} />
 
           <h2
             className="font-quicksand mb-3 text-2xl leading-tight font-bold
